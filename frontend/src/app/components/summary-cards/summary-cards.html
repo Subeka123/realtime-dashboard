@@ -1,0 +1,38 @@
+<div class="cards">
+  <mat-card class="sales-card">
+  <div class="card-container">
+    <div class="icon-box">
+      <mat-icon>payment</mat-icon>
+    </div>
+    <div class="content">
+      <p class="title">Total Orders</p>
+      <h2 class="value">{{summary?.totalOrders}}</h2>
+      <p class="trend">+ {{ summary?.ordersGrowth }}% since last month</p>
+    </div>
+  </div>
+</mat-card>
+<mat-card class="sales-card">
+  <div class="card-container">
+    <div class="icon-box">
+      <mat-icon>inventory_2</mat-icon>
+    </div>
+    <div class="content">
+      <p class="title">Total Sales</p>
+      <h2 class="value">{{summary?.totalSales}}</h2>
+      <p class="trend">+ {{ summary?.salesGrowth }}% since last month</p>
+    </div>
+  </div>
+</mat-card>
+<mat-card class="sales-card">
+  <div class="card-container">
+    <div class="icon-box">
+      <mat-icon>people</mat-icon>
+    </div>
+    <div class="content">
+      <p class="title">Total Customers</p>
+      <h2 class="value">{{summary?.totalCustomers}}</h2>
+      <p class="trend">+ {{ summary?.customerGrowth }}% since last month</p>
+    </div>
+  </div>
+</mat-card>
+</div>

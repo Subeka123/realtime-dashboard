@@ -1,0 +1,16 @@
+
+.charts {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px; 
+}
+
+@media (max-width: 925px) {
+  .charts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.cards{
+  padding: 10px;
+}
