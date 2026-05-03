@@ -2,23 +2,15 @@
 
     A modern, real-time analytics dashboard built using Angular, Node.js, and Socket.IO.This project demonstrates live data streaming, interactive charts, and scalable UI architecture.
 
-# 📸 Preview
-    
-    Dashboard includes cards, charts, and real-time updates
-
-        📊 Revenue analytics
-        🥧 Traffic sources
-        📈 Session tracking
-        📋 Orders table
-
 # ✨ Features
-    🔄 Real-time updates using WebSockets (Socket.IO)
-    📊 Interactive charts (Line, Bar, Pie,Doughtnut) using ng2-charts
-    📱 Responsive design (mobile + desktop)
-    🎨 Angular Material UI
-    📦 Modular and scalable architecture
 
-# 🛠 Tech Stack
+- Real-time updates using WebSockets (Socket.IO)
+- Interactive charts (Line, Bar, Pie,Doughtnut) using ng2-charts
+- Responsive design (mobile + desktop)
+- Angular Material UI
+- Modular and scalable architecture
+
+# Tech Stack
 # Frontend
     Angular (Standalone Components)
     Angular Material
@@ -31,7 +23,8 @@
     GitHub
     Docker
 
-# 📁 Project Structure
+# Project Structure
+```
 realtime-dashboard/
 ├── frontend/
 │   ├── src/app/
@@ -52,3 +45,18 @@ realtime-dashboard/
 │
 ├── docker-compose.yml
 └── README.md
+```
+
+# Setup
+## Frontend
+cd frontend
+npm install
+ng serve
+
+## Backend
+cd backend
+npm install
+
+# Access
+Backend API: http://localhost:3000
+Frontend: http://localhost:4200
