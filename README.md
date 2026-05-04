@@ -12,8 +12,8 @@
 
 # Tech Stack
 # Frontend
-    Angular (Standalone Components)
-    Angular Material
+    Angular 21 (Standalone Components)
+    Angular Material 21
     ng2-charts / Chart.js
 # Backend
     Node.js
@@ -49,14 +49,18 @@ realtime-dashboard/
 
 # Setup
 ## Frontend
+```bash
 cd frontend
 npm install
 ng serve
+```
 
 ## Backend
+```bash
 cd backend
 npm install
+```
 
 # Access
-Backend API: http://localhost:3000
-Frontend: http://localhost:4200
+- Backend API: http://localhost:3000
+- Frontend: http://localhost:4200
