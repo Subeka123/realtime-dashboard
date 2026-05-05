@@ -4,6 +4,11 @@ import cors from "cors";
 import http from "http";
 import { Server } from "socket.io";
 import { mockData } from "./mock-data";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const PORT = process.env.PORT || 3000;
 
 const app=express();
 app.use(cors());
@@ -24,6 +29,6 @@ io.on('connection', (socket) => {
     }, 10000); // Update every 10 seconds
 });
 
-server.listen(3000,()=>{
-    console.log('server listening port 3000');
+server.listen(PORT,()=>{
+    console.log(`server listening on port ${PORT}`);
 })
