@@ -12,7 +12,7 @@ export class SocketService {
 
   private ensureConnected(): Socket {
     if (!this.socket) {
-      this.socket = io('http://localhost:3000', {
+      this.socket = io('https://realtime-backend-8r0z.onrender.com', {
         reconnection: true,
         reconnectionDelay: 1000,
         reconnectionDelayMax: 5000,
