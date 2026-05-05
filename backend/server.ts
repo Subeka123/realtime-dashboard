@@ -26,7 +26,7 @@ io.on('connection', (socket) => {
 
     setInterval(() => {
       socket.emit('dashboard-update', mockData(true));
-    }, 10000); // Update every 10 seconds
+    }, 15000); // Update every 15 seconds
 });
 
 server.listen(PORT,()=>{
