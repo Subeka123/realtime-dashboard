@@ -1,23 +1,32 @@
-<app-summary-cards [summary]="summary"></app-summary-cards>
-
-<div class="charts">
-  <mat-card class="cards">
-    <app-revenue-chart [data]="monthlyRevenue"></app-revenue-chart>
-  </mat-card>
-
-  <mat-card class="cards">
-    <app-traffic-pie [data]="trafficSources"></app-traffic-pie>
-  </mat-card>
-
-  <mat-card class="cards">
-    <app-sessions-bar [data]="sessions"></app-sessions-bar>
-  </mat-card>
-
-  <mat-card class="cards">
-    <app-doughtnut-chart [data]="doughtnutData"></app-doughtnut-chart>
-  </mat-card>
+@if(loading){
+<div class="loader-container">
+  <mat-spinner></mat-spinner>
 </div>
+}
+@else{
+<div>
+  <app-summary-cards [summary]="summary"></app-summary-cards>
 
-<!-- <mat-card> -->
-  <app-orders-table [orders]="orders"></app-orders-table>
-<!-- </mat-card> -->
+  <div class="charts">
+    <mat-card class="cards">
+      <app-revenue-chart [data]="monthlyRevenue"></app-revenue-chart>
+    </mat-card>
+
+    <mat-card class="cards">
+      <app-traffic-pie [data]="trafficSources"></app-traffic-pie>
+    </mat-card>
+
+    <mat-card class="cards">
+      <app-sessions-bar [data]="sessions"></app-sessions-bar>
+    </mat-card>
+
+    <mat-card class="cards">
+      <app-doughtnut-chart [data]="doughtnutData"></app-doughtnut-chart>
+    </mat-card>
+  </div>
+
+  <!-- <mat-card> -->
+    <app-orders-table [orders]="orders"></app-orders-table>
+  <!-- </mat-card> -->
+</div>
+}

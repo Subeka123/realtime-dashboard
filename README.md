@@ -61,6 +61,6 @@ cd backend
 npm install
 ```
 
-# Access
-- Backend API: http://localhost:3000
-- Frontend: http://localhost:4200
+# 🌐 Live Demo
+- 🔗 Frontend (Angular App): https://realtime-dashboard-olive.vercel.app/
+- ⚙️ Backend API: https://realtime-backend-8r0z.onrender.com

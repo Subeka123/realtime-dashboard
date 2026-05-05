@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DashboardService } from '../../services/dashboard.service';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { RevenueChartComponent } from '../revenue-chart/revenue-chart';
 import { TrafficPieComponent } from '../traffic-pie/traffic-pie';
 import { SessionsBarComponent } from '../sessions-bar/sessions-bar';
@@ -10,7 +11,7 @@ import { DoughtnutChart } from '../doughtnut-chart/doughtnut-chart';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [MatCardModule, SessionsBarComponent, RevenueChartComponent, TrafficPieComponent,
+  imports: [MatCardModule, MatProgressSpinnerModule, SessionsBarComponent, RevenueChartComponent, TrafficPieComponent,
     SummaryCardsComponent, OrdersTableComponent, DoughtnutChart],
   templateUrl: './dashboard.html',
   styleUrls: ['./dashboard.css']
@@ -25,6 +26,7 @@ export class DashboardComponent implements OnInit, OnDestroy{
   orders: any[] = [];
   sales:any[]=[];
   doughtnutData:any[]=[];
+  loading: boolean = true;
   
   subscription: any;
   
@@ -39,7 +41,7 @@ export class DashboardComponent implements OnInit, OnDestroy{
       this.orders = data.orders;
       this.sales=data.productSales;
       this.doughtnutData=data.doughtnutData;
-
+      this.loading = false;
     });
     
   }

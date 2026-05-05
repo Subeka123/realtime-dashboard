@@ -1,8 +1,15 @@
 
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
 .charts {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 32px; 
+  gap: 32px;
 }
 
 @media (max-width: 925px) {
