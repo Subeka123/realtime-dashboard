@@ -21,7 +21,6 @@
     Socket.IO
 # DevOps
     GitHub
-    Docker
 
 # Project Structure
 ```
@@ -43,7 +42,6 @@ realtime-dashboard/
 │   │   ├── mock-data.ts/            # Mock data generator
 │   │   └── server.ts                # Socket io logic
 │
-├── docker-compose.yml
 └── README.md
 ```
 
