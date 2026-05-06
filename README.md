@@ -61,4 +61,4 @@ npm install
 
 # 🌐 Live Demo
 
-- 🔗 realtime-dashboard-iota.vercel.app
+[Open Dashboard](realtime-dashboard-iota.vercel.app)
